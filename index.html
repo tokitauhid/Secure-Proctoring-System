@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Exam System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Secure Online Examination</h1>
+    <div class="stats">
+        <div>Violations: <span id="violations">0</span></div>
+        <div>Tab Switch: <span id="tabSwitch">0</span></div>
+        <div>Copy/Paste Attempts: <span id="copyCount">0</span></div>
+        <div>Focus Loss: <span id="focusLoss">0</span></div>
+        <div>Suspicion Score: <span id="score">0</span></div>
+    </div>
+    <div class="timer">
+        Time Left: <span id="timer">10:00</span>
+    </div>
+    <div class="exam-box">
+        <h2>Question 1</h2>
+        <p>What does HTML stand for?</p>
+
+        <label><input type="radio" name="q1"> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="q1"> High Tech Machine Learning</label><br>
+        <label><input type="radio" name="q1"> Home Tool Markup Language</label>
+    </div>
+    <button onclick="submitExam()">Submit Exam</button>
+    <h2>Violation Logs</h2>
+    <ul id="logs"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
